@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_ndtry_blue_red" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluecircle" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-yh-oUU">
+                                <rect key="frame" x="220" y="74" width="125" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XG-as-gnr">
+                                <rect key="frame" x="-20" y="331" width="154" height="30"/>
+                                <state key="normal" title="Hide Red">
+                                    <color key="titleColor" red="1" green="0.073525500229999999" blue="0.1169013668" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideTheRedCircleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4Z-fZ-dTt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPR-Wt-4tp">
+                                <rect key="frame" x="233" y="333" width="154" height="30"/>
+                                <state key="normal" title="Hide Blue">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideTheBlueCircleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSC-fj-Wb9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redcircle" translatesAutoresizingMaskIntoConstraints="NO" id="7ZD-h5-4sC">
+                                <rect key="frame" x="30" y="74" width="125" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1z-6w-6cw">
+                                <rect key="frame" x="103" y="333" width="168" height="26"/>
+                                <state key="normal" title="Hide Both">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideBoth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jew-5l-ZnG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-ND-BEe">
+                                <rect key="frame" x="-10" y="391" width="135" height="31"/>
+                                <state key="normal" title="Bring Red">
+                                    <color key="titleColor" red="1" green="0.073525500229999999" blue="0.1169013668" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bringRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbt-rs-Gae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-kl-ge1">
+                                <rect key="frame" x="257" y="392" width="107" height="33"/>
+                                <state key="normal" title="Bring Blue"/>
+                                <connections>
+                                    <action selector="bringBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMO-5k-IRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rc-ta-ww0">
+                                <rect key="frame" x="139" y="391" width="96" height="30"/>
+                                <state key="normal" title="Bring Both">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bringBoth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qo-8K-y8p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueCircle" destination="ZSs-yh-oUU" id="0Xd-4R-XmH"/>
+                        <outlet property="bringBlue" destination="yB8-kl-ge1" id="rZ9-wH-uW2"/>
+                        <outlet property="bringBoth" destination="7rc-ta-ww0" id="uUb-pu-EuJ"/>
+                        <outlet property="bringRed" destination="rX9-ND-BEe" id="L5w-hY-tw6"/>
+                        <outlet property="hideBlue" destination="bPR-Wt-4tp" id="eBt-Qg-XPP"/>
+                        <outlet property="hideBoth" destination="P1z-6w-6cw" id="z6T-1S-9TR"/>
+                        <outlet property="hideRed" destination="4XG-as-gnr" id="ZqD-Ol-W6I"/>
+                        <outlet property="redCircle" destination="7ZD-h5-4sC" id="4TZ-2n-PBn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.5" y="287.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluecircle" width="64" height="64"/>
+        <image name="redcircle" width="64" height="64"/>
+    </resources>
+</document>
